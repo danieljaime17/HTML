@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ejemplo de HTML completo cubriendo múltiples conceptos">
+    <meta name="keywords" content="HTML, ejemplo, tutorial">
+    <meta name="author" content="Tu Nombre">
+    <title>Ejemplo Completo de HTML</title>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Ejemplo Completo de HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#contenido">Contenido</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Bienvenido a este <strong>ejemplo completo de HTML</strong> donde cubriremos múltiples conceptos.</p>
+    </section>
+
+    <!-- Sección de Contenido -->
+    <section id="contenido">
+        <h2>Contenido</h2>
+
+        <!-- Formateo de Texto -->
+        <article>
+            <h3>Formateo de Texto</h3>
+            <p>Este es un texto en <strong>negrita</strong>, este es un texto en <em>cursiva</em>, y este es un <u>texto subrayado</u>.</p>
+            <blockquote>
+                Esto es una cita en bloque.
+            </blockquote>
+            <p>Y esta es una cita <q>en línea</q>.</p>
+        </article>
+
+        <!-- Listas -->
+        <article>
+            <h3>Listas</h3>
+            <h4>Lista Ordenada</h4>
+            <ol>
+                <li>Primer elemento</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+            </ol>
+
+            <h4>Lista Desordenada</h4>
+            <ul>
+                <li>Primer elemento</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+            </ul>
+
+            <h4>Lista de Definición</h4>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado para crear páginas web</dd>
+                <dt>CSS</dt>
+                <dd>Lenguaje de estilos para dar formato a las páginas web</dd>
+            </dl>
+        </article>
+
+        <!-- Tablas -->
+        <article>
+            <h3>Tablas</h3>
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>30</td>
+                </tr>
+            </table>
+        </article>
+
+        <!-- Formularios -->
+        <article>
+            <h3>Formularios</h3>
+            <form action="/submit" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="comments">Comentarios:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                <br>
+                <label for="rating">Puntuación:</label>
+                <select id="rating" name="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+
+        <!-- Imágenes y Multimedia -->
+        <article>
+            <h3>Imágenes y Multimedia</h3>
+            <img src="https://via.placeholder.com/150" alt="Ejemplo de imagen">
+            <br>
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <br>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </article>
+
+        <!-- Elementos Semánticos -->
+        <article>
+            <h3>Elementos Semánticos</h3>
+            <section>
+                <header>
+                    <h4>Sección</h4>
+                </header>
+                <p>Este es un ejemplo de una sección con su propio encabezado.</p>
+            </section>
+            <article>
+                <h4>Artículo</h4>
+                <p>Este es un ejemplo de un artículo.</p>
+            </article>
+            <aside>
+                <h4>Aside</h4>
+                <p>Este es un contenido complementario.</p>
+            </aside>
+        </article>
+
+        <!-- Canvas y SVG -->
+        <article>
+            <h3>Canvas y SVG</h3>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect(0, 0, 150, 75);
+            </script>
+            <br>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+        </article>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Para más información, por favor contacta a <a href="mailto:info@example.com">info@example.com</a>.</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
